@@ -4,9 +4,9 @@ from typing import Optional, Tuple, Union
 import numpy as np
 from matplotlib import pyplot as plt
 
-import neural_network_algorithm_config as config
+import two_layer_perceptron_config as config
 
-logger = Logger("neural_network_algorithm")
+logger = Logger("two_layer_perceptron")
 
 
 def softmax(x: np.ndarray) -> np.ndarray:
@@ -14,7 +14,7 @@ def softmax(x: np.ndarray) -> np.ndarray:
     return np.exp(x) / x_exp_sum
 
 
-class NeuralNetworkAlgorithm:
+class TwoLayerPerceptron:
     cost_func: str
     hidden_activ_func: str
     hidden_neurons_number: int

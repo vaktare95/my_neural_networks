@@ -1,6 +1,6 @@
 import numpy as np
 
-from neural_network_algorithm import NeuralNetworkAlgorithm
+from two_layer_perceptron import TwoLayerPerceptron
 from keras.datasets import mnist
 
 np.set_printoptions(formatter={"float": lambda x: "{0:0.1f}".format(x)})
@@ -9,7 +9,7 @@ np.set_printoptions(formatter={"float": lambda x: "{0:0.1f}".format(x)})
 X_train = X_train.reshape([X_train.shape[0], 784])
 X_test = X_test.reshape([X_test.shape[0], 784])
 
-model = NeuralNetworkAlgorithm(
+model = TwoLayerPerceptron(
     cost_func="cross-entropy",
     hidden_activ_func="ReLU",
     hidden_neurons_number=49,
