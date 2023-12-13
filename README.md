@@ -6,10 +6,10 @@ The algorithm is tested (test_two_layer_perceptron.py) on MNIST dataset loaded f
 
 To test the algorithm, just run:
 ```
-python3.8 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 and then:
 ```
-python3.8 test_two_layer_perceptron.py
+python3 test_two_layer_perceptron.py
 ```
 
